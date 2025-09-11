@@ -1,4 +1,4 @@
-public class sorting1{
+public class sortingBubble1{
     static void bubbleSort(int num[]){
         
         for(int turn=0;turn<num.length;turn++){
