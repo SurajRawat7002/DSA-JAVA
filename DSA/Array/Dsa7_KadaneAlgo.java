@@ -1,6 +1,8 @@
 import java.util.*;
 public class Dsa7_KadaneAlgo{
-    static void kadane(int num[]){
+    // kadane algo with limitations
+
+    static int kadane(int num[]){
         int CurrSum= 0;
         int MaxSum=Integer.MIN_VALUE;
         for(int i=0;i<num.length;i++){
@@ -10,10 +12,24 @@ public class Dsa7_KadaneAlgo{
             }
             MaxSum=Math.max(CurrSum, MaxSum)==0?-1:Math.max(CurrSum,MaxSum);
         }
-        System.out.println("Max sum is " + MaxSum);
+        return MaxSum;
     }
+
+    //updated kadane without any limitations
+
+    // static int kadane(int number[]){
+    //     int currsum=number[0];
+    //     int max=number[0];
+    //     for(int i=1;i<number.length;i++){
+    //         currsum+=Math.max(number[i],currsum+number[i]);
+    //         max=Math.max(currsum,max);
+    //     }
+    //     return max;
+    // }
+
+
     public static void  main(String[]args){
         int number[]={-2,-3,4,-1,-2,1,5,-3};
-        kadane(number);
+        System.out.println(kadane(number));
     }
 }
