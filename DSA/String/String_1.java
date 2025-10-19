@@ -1,3 +1,4 @@
+import java.util.*;
 class String_1{
     public static void main(String[]args){
         //Char arr in java
@@ -19,6 +20,11 @@ class String_1{
         for(int i=0;i<fullName.length();i++){
             System.out.println(fullName.charAt(i));  /// charAt method for string 
         }
+
+        // ***********scanner for string 
+        Scanner sc=new Scanner(System.in);
+        String username=sc.nextLine();
+        System.out.print(username);
 
     }
 }
