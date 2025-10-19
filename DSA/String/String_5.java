@@ -10,6 +10,9 @@ class String_5{
     public static void main(String[]args){
 //substring 
 String str="Hello World";
-System.out.println(subString(str,0,5));
+// System.out.println(subString(str,0,5));
+
+// *************predefine substring function in java 
+System.out.println(str.substring(0,5));
     }
 }
