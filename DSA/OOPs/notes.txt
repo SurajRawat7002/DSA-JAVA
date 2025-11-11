@@ -1,0 +1,3 @@
+classes and objects:
+objects are entities in the real world 
+classes= are group of these entities
