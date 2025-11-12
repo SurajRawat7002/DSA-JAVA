@@ -9,9 +9,8 @@ public class Oops_3 {
         // ***************Different Types of Constructor
         Student s1=new Student();  //No parameter
         Student s2=new Student("Suraj Rawat"); // With only name parameter
-        // Student s3=new Student(18); // with only age parameter
+        Student s3=new Student(18); // with only age parameter
         Student s4=new Student("Suraj Rawat", 18); // with both parameter
-        System.out.println(s3.age);
     }}
 
 //Creating  a Class with Constructor
